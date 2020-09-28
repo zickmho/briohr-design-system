@@ -1,0 +1,1826 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="build/css/bootstrap-grid.min.css">  
+        <link rel="stylesheet" href="build/css/app.css">  
+        <link rel="stylesheet" href="node_modules/prismjs/themes/prism-tomorrow.css">      
+    </head>
+    <body>
+        <section class="header">
+            <div class="header-title">
+                <img width="30" src="build/images/logo-mark.svg" />
+                <h1>BrioHR Stylesheets Guide</h1>
+            </div>
+        </section>    
+
+        <!-- sidebar nav -->
+        <aside class="sidebar">
+            <div class="sidebar-item">
+                <h5>Elements</h5>
+                <ul>
+                    <li><a href="#variables">Variables</a></li>
+                    <li><a href="#colors">Colors</a></li>
+                    <li><a href="#typeface">Typeface</a></li>
+                    <li><a href="#">Spacing</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-item">
+                <h5>Components</h5>
+                <ul>
+                    <li><a href="#card">Card</a></li>
+                    <li><a href="#avatar">Avatar</a></li>
+                    <li><a href="#pill">Pill</a></li>
+                    <li><a href="#banner">Banner</a></li>                    
+                    <li><a href="#button">Button</a></li>
+                    <li><a href="#">Toast</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-item">
+                <h5>Objects</h5>
+                <ul>
+                    <li><a href="#">Container</a></li>
+                    <li><a href="#">Embed</a></li>
+                    <li><a href="#">Media</a></li>                    
+                </ul>
+            </div>
+
+
+            <div class="sidebar-item">
+                <h5>Utilities</h5>
+                <ul>
+                    <li><a href="#">Spacing</a></li>
+                    <li><a href="#">Text</a></li>
+                    <li><a href="#">Position</a></li>
+                    <li><a href="#">Display</a></li>                    
+                </ul>
+            </div>
+        </aside>
+
+        <!-- middle content -->
+        <div class="content-wrapper">
+            <div class="inner-content">
+                <section id="variables">
+                    <h2>Variables Declaration</h2>
+                    <p>Variables is important to be declared so the code is easy to maintain and need to be utilize across the app when writing property style. Here is the example of variables declaration to make Frontend code tidy and easy to manage.</p>
+                    <p>More fixed variables item can be add to maintain consistent styling across the app</p>            
+                    <pre>
+                        <code class="language-css">
+                            <xmp>
+                                // Base Color
+                                $white  : #ffffff;
+
+                                // Gray
+                                $gray-700:      #2E4155;
+                                $gray-600:      #506377;
+                                $gray-500:      #7A8A9B;
+                                $gray-400:      #B9C3CD;
+                                $gray-300:      #DEE2E6;
+                                $gray-200:      #ECEEF2;
+                                $gray-100:      #F5F6F8;
+
+                                // Light Blue
+                                $lightblue-700:      #0075B2;
+                                $lightblue-600:      #0795D5;
+                                $lightblue-500:      #21B2F4;
+                                $lightblue-400:      #6ECDF8;
+                                $lightblue-300:      #A6E0FF;
+                                $lightblue-200:      #C7EBFC;
+                                $lightblue-100:      #F3FBFF;
+
+                                // Blue
+                                $blue-700:      #0049CC;
+                                $blue-600:      #116ECB;
+                                $blue-500:      #218CF4;
+                                $blue-400:      #6CAFF3;
+                                $blue-300:      #B3DBFF;
+                                $blue-200:      #DBEEFF;
+                                $blue-100:      #F1F8FF;
+
+                                // Purple
+                                $purple-700:      #3F40BF;
+                                $purple-600:      #5859C8;
+                                $purple-500:      #7374E7;
+                                $purple-400:      #A0A0F0;
+                                $purple-300:      #C9CCFF;
+                                $purple-200:      #E5E7FF;
+                                $purple-100:      #F0F0FC;
+
+                                // Red
+                                $red-700:      #BF0025;
+                                $red-600:      #D12043;
+                                $red-500:      #E63A5C;
+                                $red-400:      #E63A5C;
+                                $red-300:      #FEBFC6;
+                                $red-200:      #FBDFE5;
+                                $red-100:      #FFF1F4;
+
+                                // Pink
+                                $pink-700:      #B40676;
+                                $pink-600:      #D02E96;
+                                $pink-500:      #E751B1;
+                                $pink-400:      #FB9AD8;
+                                $pink-300:      #FDB7E4;
+                                $pink-200:      #FED8F0;
+                                $pink-100:      #FFF1FA;
+
+                                // Orange
+                                $orange-700:      #B33A00;
+                                $orange-600:      #CC561D;
+                                $orange-500:      #F28830;
+                                $orange-400:      #FFB77C;
+                                $orange-300:      #FFD3B0;
+                                $orange-200:      #FFE8D4;
+                                $orange-100:      #FFF4EA;
+
+                                // Yellow
+                                $yellow-700:      #B78100;
+                                $yellow-600:      #DEAC0E;
+                                $yellow-500:      #FFCD31;
+                                $yellow-400:      #FADA76;
+                                $yellow-300:      #FFE9A6;
+                                $yellow-200:      #FEF4D4;
+                                $yellow-100:      #FFFAEB;
+
+                                // Green
+                                $green-700:      #006653;
+                                $green-600:      #008E74;
+                                $green-500:      #02A284;
+                                $green-400:      #40BFA7;
+                                $green-300:      #81E7D4;
+                                $green-200:      #D2F5F0;
+                                $green-100:      #ECFBF9;   
+
+
+
+
+                                // Base Font 
+                                $font-heading:        "Lato",sans-serif;
+                                $font-base:           "Roboto",sans-serif;
+                                $font-base-color:     $gray-700;
+                                $font-secondary-color:  $gray-600;
+                                $font-muted-color:      $gray-500;
+
+
+                                // Base Font Weight
+                                $weight-regular:    400;
+                                $weight-semibold:   500;
+                                $weight-bold:       700;
+
+                                // Base Font Size
+                                $font-1-size:        32px;
+                                $font-2-size:        28px;
+                                $font-3-size:        24px;
+                                $font-4-size:        20px;
+                                $font-5-size:        16px;
+                                $font-6-size:        14px;
+                                $font-7-size:        12px;
+                                $font-8-size:        10px;
+
+
+                                // Base Line Height
+                                $font-1-height:        40px;
+                                $font-2-height:        36px;
+                                $font-3-height:        30px;
+                                $font-4-height:        28px;
+                                $font-5-height:        22px;
+                                $font-6-height:        20px;
+                                $font-7-height:        18px;
+                                $font-8-height:        16px;
+
+                                // Base Spacing Unit
+                                $spacing-1  : 4px;
+                                $spacing-2  : 8px;
+                                $spacing-3  : 12px;
+                                $spacing-4  : 16px;
+                                $spacing-5  : 24px;
+                                $spacing-6  : 32px;
+                                $spacing-7  : 48px;
+
+                                $icon-xs    : 12px;
+                                $icon-sm    : 16px;
+                                $icon-md    : 20px;
+                                $icon-lg    : 24px;
+                                $icon-xl    : 32px;
+
+                                $avatar-xxs : 24px;
+                                $avatar-xs  : 30px;
+                                $avatar-sm  : 40px;
+                                $avatar-md  : 60px;
+                                $avatar-lg  : 80px;
+                                $avatar-xl  : 120px;
+
+                                // Base Radius
+                                $radius:    6px;
+                                $radius-lg: 10px;
+
+                                // Base transition
+                                $transition-default:    .25s ease all;
+                                $transition-fast:       .1s ease all;
+                                $transition-slow:       .4s ease all;
+                            </xmp>
+                        </code>
+                    </pre>   
+                </section>   
+                
+                <!-- SECTION COLOR -->
+                <section id="colors">
+                    <h2>Colors</h2>
+                    <p>Here is the defined colors to be used across the app. Each color pallete contains weight variation darkest to lightest from <code>700, 600, 500, 400, 300, 200, 100</code></p>
+
+                    <!-- color gray -->
+                    <div class="color-section">
+                        <div class="color-title">Gray</div>
+                        <div class="color-sample">
+                            <div class="color-row">
+                                <div class="color-item gray"></div>
+                                <div class="color-item gray"></div>
+                                <div class="color-item gray"></div>
+                                <div class="color-item gray"></div>
+                                <div class="color-item gray"></div>
+                                <div class="color-item gray"></div>
+                                <div class="color-item gray"></div>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-desc">
+                                    <div>$gray-700</div>
+                                    <div>#2E4155</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$gray-600</div>
+                                    <div>#506377</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$gray-500</div>
+                                    <div>#7A8A9B</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$gray-400</div>
+                                    <div>#B9C3CD</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$gray-300</div>
+                                    <div>#DEE2E6</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$gray-200</div>
+                                    <div>#ECEEF2</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$gray-100</div>
+                                    <div>#F5F6F8</div>
+                                </div>
+                            </div>                        
+                        </div>                    
+                    </div>
+
+                    <!-- color lightblue -->
+                    <div class="color-section">
+                        <div class="color-title">Light Blue</div>
+                        <div class="color-sample">
+                            <div class="color-row">
+                                <div class="color-item lightblue"></div>
+                                <div class="color-item lightblue"></div>
+                                <div class="color-item lightblue"></div>
+                                <div class="color-item lightblue"></div>
+                                <div class="color-item lightblue"></div>
+                                <div class="color-item lightblue"></div>
+                                <div class="color-item lightblue"></div>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-desc">
+                                    <div>$lightblue-700</div>
+                                    <div>#0075B2</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$lightblue-600</div>
+                                    <div>#0795D5</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$lightblue-500</div>
+                                    <div>#21B2F4</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$lightblue-400</div>
+                                    <div>#6ECDF8</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$lightblue-300</div>
+                                    <div>#A6E0FF</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$lightblue-200</div>
+                                    <div>#C7EBFC</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$lightblue-100</div>
+                                    <div>#F3FBFF</div>
+                                </div>
+                            </div>                        
+                        </div>                    
+                    </div>
+
+                    <!-- color blue -->
+                    <div class="color-section">
+                        <div class="color-title">Blue</div>
+                        <div class="color-sample">
+                            <div class="color-row">
+                                <div class="color-item blue"></div>
+                                <div class="color-item blue"></div>
+                                <div class="color-item blue"></div>
+                                <div class="color-item blue"></div>
+                                <div class="color-item blue"></div>
+                                <div class="color-item blue"></div>
+                                <div class="color-item blue"></div>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-desc">
+                                    <div>$blue-700</div>
+                                    <div>#0049CC</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$blue-600</div>
+                                    <div>#116ECB</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$blue-500</div>
+                                    <div>#218CF4</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$blue-400</div>
+                                    <div>#6CAFF3</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$blue-300</div>
+                                    <div>#B3DBFF</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$blue-200</div>
+                                    <div>#DBEEFF</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$blue-100</div>
+                                    <div>#F1F8FF</div>
+                                </div>
+                            </div>                        
+                        </div>                    
+                    </div>
+
+                    <!-- color purple -->
+                    <div class="color-section">
+                        <div class="color-title">Purple</div>
+                        <div class="color-sample">
+                            <div class="color-row">
+                                <div class="color-item purple"></div>
+                                <div class="color-item purple"></div>
+                                <div class="color-item purple"></div>
+                                <div class="color-item purple"></div>
+                                <div class="color-item purple"></div>
+                                <div class="color-item purple"></div>
+                                <div class="color-item purple"></div>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-desc">
+                                    <div>$purple-700</div>
+                                    <div>#3F40BF</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$purple-600</div>
+                                    <div>#5859C8</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$purple-500</div>
+                                    <div>#7374E7</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$purple-400</div>
+                                    <div>#A0A0F0</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$purple-300</div>
+                                    <div>#C9CCFF</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$purple-200</div>
+                                    <div>#E5E7FF</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$purple-100</div>
+                                    <div>#F0F0FC</div>
+                                </div>
+                            </div>                        
+                        </div>                    
+                    </div>
+
+                    <!-- color red -->
+                    <div class="color-section">
+                        <div class="color-title">Red</div>
+                        <div class="color-sample">
+                            <div class="color-row">
+                                <div class="color-item red"></div>
+                                <div class="color-item red"></div>
+                                <div class="color-item red"></div>
+                                <div class="color-item red"></div>
+                                <div class="color-item red"></div>
+                                <div class="color-item red"></div>
+                                <div class="color-item red"></div>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-desc">
+                                    <div>$red-700</div>
+                                    <div>#BF0025</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$red-600</div>
+                                    <div>#D12043</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$red-500</div>
+                                    <div>#E63A5C</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$red-400</div>
+                                    <div>#F87B92</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$red-300</div>
+                                    <div>#FEBFC6</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$red-200</div>
+                                    <div>#FBDFE5</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$red-100</div>
+                                    <div>#FFF1F4</div>
+                                </div>
+                            </div>                        
+                        </div>                    
+                    </div>
+
+                    <!-- color Pink -->
+                    <div class="color-section">
+                        <div class="color-title">Pink</div>
+                        <div class="color-sample">
+                            <div class="color-row">
+                                <div class="color-item pink"></div>
+                                <div class="color-item pink"></div>
+                                <div class="color-item pink"></div>
+                                <div class="color-item pink"></div>
+                                <div class="color-item pink"></div>
+                                <div class="color-item pink"></div>
+                                <div class="color-item pink"></div>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-desc">
+                                    <div>$pink-700</div>
+                                    <div>#B40676</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$pink-600</div>
+                                    <div>#D02E96</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$pink-500</div>
+                                    <div>#E751B1</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$pink-400</div>
+                                    <div>#FB9AD8</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$pink-300</div>
+                                    <div>#FDB7E4</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$pink-200</div>
+                                    <div>#FED8F0</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$pink-100</div>
+                                    <div>#FFF1FA</div>
+                                </div>
+                            </div>                        
+                        </div>                    
+                    </div>
+
+                    <!-- color Orange -->
+                    <div class="color-section">
+                        <div class="color-title">Orange</div>
+                        <div class="color-sample">
+                            <div class="color-row">
+                                <div class="color-item orange"></div>
+                                <div class="color-item orange"></div>
+                                <div class="color-item orange"></div>
+                                <div class="color-item orange"></div>
+                                <div class="color-item orange"></div>
+                                <div class="color-item orange"></div>
+                                <div class="color-item orange"></div>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-desc">
+                                    <div>$orange-700</div>
+                                    <div>#B33A00</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$orange-600</div>
+                                    <div>#CC561D</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$orange-500</div>
+                                    <div>#F28830</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$orange-400</div>
+                                    <div>#FFB77C</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$orange-300</div>
+                                    <div>#FFD3B0</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$orange-200</div>
+                                    <div>#FFE8D4</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$orange-100</div>
+                                    <div>#FFF4EA</div>
+                                </div>
+                            </div>                        
+                        </div>                    
+                    </div>
+
+                    <!-- color Yellow -->
+                    <div class="color-section">
+                        <div class="color-title">Yellow</div>
+                        <div class="color-sample">
+                            <div class="color-row">
+                                <div class="color-item yellow"></div>
+                                <div class="color-item yellow"></div>
+                                <div class="color-item yellow"></div>
+                                <div class="color-item yellow"></div>
+                                <div class="color-item yellow"></div>
+                                <div class="color-item yellow"></div>
+                                <div class="color-item yellow"></div>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-desc">
+                                    <div>$yellow-700</div>
+                                    <div>#B78100</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$yellow-600</div>
+                                    <div>#DEAC0E</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$yellow-500</div>
+                                    <div>#FFCD31</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$yellow-400</div>
+                                    <div>#FADA76</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$yellow-300</div>
+                                    <div>#FFE9A6</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$yellow-200</div>
+                                    <div>#FEF4D4</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$yellow-100</div>
+                                    <div>#FFFAEB</div>
+                                </div>
+                            </div>                        
+                        </div>                    
+                    </div>
+
+                    <!-- color Green -->
+                    <div class="color-section">
+                        <div class="color-title">Green</div>
+                        <div class="color-sample">
+                            <div class="color-row">
+                                <div class="color-item green"></div>
+                                <div class="color-item green"></div>
+                                <div class="color-item green"></div>
+                                <div class="color-item green"></div>
+                                <div class="color-item green"></div>
+                                <div class="color-item green"></div>
+                                <div class="color-item green"></div>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-desc">
+                                    <div>$green-700</div>
+                                    <div>#006653</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$green-600</div>
+                                    <div>#008E74</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$green-500</div>
+                                    <div>#02A284</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$green-400</div>
+                                    <div>#40BFA7</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$green-300</div>
+                                    <div>#81E7D4</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$green-200</div>
+                                    <div>#D2F5F0</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$green-100</div>
+                                    <div>#F3FFFD</div>
+                                </div>
+                            </div>                        
+                        </div>                    
+                    </div>
+
+                    <!-- color CTA -->
+                    <div class="color-section">
+                        <div class="color-title">CTA</div>
+                        <div class="color-sample">
+                            <div class="color-row">
+                                <div class="color-item cta"></div>
+                                <div class="color-item cta"></div>
+                                <div class="color-item cta"></div>
+                            </div>
+                            <div class="color-row">
+                                <div class="color-desc">
+                                    <div>$cta-700</div>
+                                    <div>#E95237</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$cta-600</div>
+                                    <div>#FF6347</div>
+                                </div>
+                                <div class="color-desc">
+                                    <div>$cta-500</div>
+                                    <div>#FF7056</div>
+                                </div>                                
+                            </div>                        
+                        </div>                    
+                    </div>
+                </section>
+
+                <!-- SECTION TYPEFACE -->
+                <section id="typeface">
+                    <h2>Typeface</h2>
+                    <p>Brio app consist of 2 types of typeface <code>Lato</code> and <code>Roboto</code>. Lato font is used for Heading font (card title, modal title, page title) and only contain <code>1 weight: Bold</code>  while Roboto used for default body text and they consist different predefined size of font usage.</p>
+
+                    <h5 class="mt-6">Example of heading using Lato</h5>
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>H1</div>
+                            <small>font-size: 32px</small>
+                            <small>line-height: 40px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <h1>This is the heading example</h1>
+                        </div>
+                    </div>
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>H2</div>
+                            <small>font-size: 28px</small>
+                            <small>line-height: 36px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <h2>This is the heading example</h2>
+                        </div>
+                    </div>
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>H3</div>
+                            <small>font-size: 24px</small>
+                            <small>line-height: 30px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>This is the heading example</h3>
+                        </div>
+                    </div>
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>H4</div>
+                            <small>font-size: 20px</small>
+                            <small>line-height: 28px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <h4>This is the heading example</h4>
+                        </div>
+                    </div>
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>H5</div>
+                            <small>font-size: 16px</small>
+                            <small>line-height: 22px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <h5>This is the heading example</h5>
+                        </div>
+                    </div>
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>H6</div>
+                            <small>font-size: 14px</small>
+                            <small>line-height: 20px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <h6>This is the heading example</h6>
+                        </div>
+                    </div>   
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                                <h1>This is the heading example</h1>
+                                <h2>This is the heading example</h2>
+                                <h3>This is the heading example</h3>
+                                <h4>This is the heading example</h4>
+                                <h5>This is the heading example</h5>
+                                <h6>This is the heading example</h6>
+                            </xmp>
+                        </code>
+                    </pre>
+                    
+                    <h4 class="mt-6">Example of content font using Roboto</h4>
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>Text 1</div>
+                            <small>font-size: 32px</small>
+                            <small>line-height: 40px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="text-1">This is content example</div>
+                        </div>
+                    </div>
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>Text 2</div>
+                            <small>font-size: 28px</small>
+                            <small>line-height: 36px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="text-2">This is content example</div>
+                        </div>
+                    </div>
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>Text 3</div>
+                            <small>font-size: 24px</small>
+                            <small>line-height: 30px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="text-3">This is content example</div>
+                        </div>
+                    </div>
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>Text 4</div>
+                            <small>font-size: 20px</small>
+                            <small>line-height: 28px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="text-4">This is content example</div>
+                        </div>
+                    </div>
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>Text 5</div>
+                            <small>font-size: 16px</small>
+                            <small>line-height: 22px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="text-5">This is content example</div>
+                        </div>
+                    </div>
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>Text 6</div>
+                            <small>font-size: 14px</small>
+                            <small>line-height: 20px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="text-6">This is content example</div>
+                        </div>
+                    </div> 
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>Text 7</div>
+                            <small>font-size: 12px</small>
+                            <small>line-height: 18px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="text-7">This is content example</div>
+                        </div>
+                    </div> 
+                    <div class="row  mb-3">
+                        <div class="col-sm-3">
+                            <div>Text 8</div>
+                            <small>font-size: 10px</small>
+                            <small>line-height: 16px</small>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="text-8">This is content example</div>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                                <div class="text-1">This is content example</div>
+                                <div class="text-2">This is content example</div>
+                                <div class="text-3">This is content example</div>
+                                <div class="text-4">This is content example</div>
+                                <div class="text-5">This is content example</div>
+                                <div class="text-6">This is content example</div>
+                                <div class="text-7">This is content example</div>
+                                <div class="text-8">This is content example</div>
+                            </xmp>
+                        </code>
+                    </pre>
+
+                    <h4 class="mt-6">Example of different font weight for Roboto</h4>
+                    <div class="row my-5">
+                        <div class="col-sm-4">
+                            <div class="text-3 text-bold text-center">Bold</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text-3 text-semibold text-center">Semibold</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text-3 text-regular text-center">Regular</div>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                                <div class="text-bold">Bold</div>
+                                <div class="text-semibold">Semibold</div>
+                                <div class="text-regular">Regular</div>
+                            </xmp>
+                        </code>
+                    </pre>
+
+                    <h4 class="mt-6">Example of different font variations for Roboto</h4>
+                    <div class="row my-5  text-center">
+                        <div class="col-sm-4">
+                            <div class="text-primary">Primary text</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text-secondary">Secondary text</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text-muted">Muted text</div>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                                <div class="text-primary">Primary text</div>
+                                <div class="text-secondary">Secondary text</div>
+                                <div class="text-muted">Muted text</div>
+                            </xmp>
+                        </code>
+                    </pre>
+
+                </section>
+
+
+                <!-- COMPONENTS -->
+                <section id="card">
+                    <h2>Card</h2>
+                    <p>Card component used to group information category. By default card will have <code>24px padding sides ($spacing-5)</code> and <code>16px padding ends ($spacing-4)</code></p>
+                    <p>Card contains 3 type of variations</p>
+                    <ul class="mb-5">
+                        <li><code>Bordered card</code></li>
+                        <li><code>Bordered card dark</code></li>
+                        <li><code>Elevated card 1dp</code></li>
+                        <li><code>Elevated card 2dp</code></li>
+                    </ul>
+                    <p>By default when declared <code>.card</code> class <strong>Elevated card 1dp</strong> will be called. Add extra classname <code>.card-border</code> for <strong>Bordered card</strong>, <code>.card-border-dark</code> for <strong>Dark border card</strong>  and <code>.card-2dp</code> for <strong>Elevated card 2dp</strong></p>
+
+                    <p>The usage of this card is vary depends on design scenarios. As mention, the default card will be most commonly used for wrapping content item, and bordered style will use within the default card</p>
+
+                    <h4>Card Examples</h4>
+                    <div class="row p-5 mb-5" style="background-color: #f5f6f8;;">
+                        <div class="col-sm-3">
+                            <div class="card card-border">
+                                <div>Border card</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card card-border-dark">
+                                <div>Border card Dark</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div>Default card</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card card-2dp">
+                                <div>Card 2dp</div>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                                <div class="card card-border">Border card</div>
+                                <div class="card card-border-dark">Border card Dark</div>
+                                <div class="card">Default card</div>
+                                <div class="card card-2dp">Card 2dp</div>
+                            </xmp>
+                        </code>
+                    </pre>
+                </section>
+                
+                <section id="avatar">
+                    <h2>Avatar</h2>
+                    <p>Avatar used to represent the profile for Brio users. Avatar can contains different sizes <code>XXS, XS, SM, MD, LG</code>. By default, if calling <code>.avatar</code> the XS size will be used.</p>
+                    <p>If there is no profile image of the user, the initial will be displayed by calling the avatar attribute of <code>data-content</code> from parent avatar. </p>
+                    <p>To show that avatar clickable add attribute <code>clickable</code> so that the cursor change to pointer. See example below</p>
+
+                    <h4>Avatar Initial Examples</h4>
+                    <div class="row py-5">
+                        <div class="col-sm-2 text-center">
+                            <div class="text-7 text-muted mb-4">Avatar XXS<br/>24px</div>
+                            <div class="avatar avatar-xxs" clickable data-initial="MH"></div>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <div class="text-7 text-muted mb-4">Avatar XS (default)<br/>30px</div>
+                            <div class="avatar avatar-xs" clickable data-initial="MH"></div>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <div class="text-7 text-muted mb-4">Avatar SM<br/>40px</div>
+                            <div class="avatar avatar-sm" clickable data-initial="MH"></div>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <div class="text-7 text-muted mb-4">Avatar MD<br/>60px</div>
+                            <div class="avatar avatar-md" data-initial="MH"></div>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <div class="text-7 text-muted mb-4">Avatar LG<br/>80px</div>
+                            <div class="avatar avatar-lg" data-initial="MH"></div>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <div class="text-7 text-muted mb-4">Avatar XL<br/>120px</div>
+                            <div class="avatar avatar-xl" data-initial="MH"></div>
+                        </div>
+                    </div>  
+                    
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                                <div class="avatar avatar-xxs" clickable data-content="MH"></div>
+                                <div class="avatar avatar-xs" clickable data-initial="MH"></div>
+                                <div class="avatar avatar-sm" clickable data-initial="MH"></div>
+                                <div class="avatar avatar-md" data-initial="MH"></div>
+                                <div class="avatar avatar-lg" data-initial="MH"></div>
+                                <div class="avatar avatar-xl" data-initial="MH"></div>
+                            </xmp>
+                        </code>
+                    </pre>
+
+                    <h4>Avatar Images Examples</h4>
+                    <div class="row py-5">
+                        <div class="col-sm-2 text-center">
+                            <div class="text-7 text-muted mb-4">Avatar XXS<br/>24px</div>
+                            <div class="avatar avatar-xxs" data-initial="MH">
+                                <img src="build/images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <div class="text-7 text-muted mb-4">Avatar XS (default)<br/>30px</div>
+                            <div class="avatar avatar-xs" data-initial="MH">
+                                <img src="build/images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <div class="text-7 text-muted mb-4">Avatar SM<br/>40px</div>
+                            <div class="avatar avatar-sm" data-initial="MH">
+                                <img src="build/images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <div class="text-7 text-muted mb-4">Avatar MD<br/>60px</div>
+                            <div class="avatar avatar-md" data-initial="MH">
+                                <img src="build/images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <div class="text-7 text-muted mb-4">Avatar LG<br/>80px</div>
+                            <div class="avatar avatar-lg" data-initial="MH">
+                                <img src="build/images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <div class="text-7 text-muted mb-4">Avatar XL<br/>120px</div>
+                            <div class="avatar avatar-xl" data-initial="MH">
+                                <img src="build/images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                    </div> 
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                                <div class="avatar avatar-xxs" data-initial="MH">
+                                    <img src="../images/avatar.jpg" alt="">
+                                </div>
+                                <div class="avatar avatar-xs" data-initial="MH">
+                                    <img src="../images/avatar.jpg" alt="">
+                                </div>
+                                <div class="avatar avatar-sm" data-initial="MH">
+                                    <img src="../images/avatar.jpg" alt="">
+                                </div>
+                                <div class="avatar avatar-md" data-initial="MH">
+                                    <img src="../images/avatar.jpg" alt="">
+                                </div>
+                                <div class="avatar avatar-lg" data-initial="MH">
+                                    <img src="../images/avatar.jpg" alt="">
+                                </div>
+                                <div class="avatar avatar-xl" data-initial="MH">
+                                    <img src="../images/avatar.jpg" alt="">
+                                </div>
+                            </xmp>
+                        </code>
+                    </pre>
+
+                    <h4>Stacked avatar Example</h4>
+                    <p>Avatar can also used for stacking to displayed list of avatar in a group. Stacked avatar can only be used to default <code> avatar XS size</code> and <code>avatar SM size</code></p>
+                    <p>Wrap the avatar class within <code>.avatar-stack</code> parent. To add limit add attribute <code>data-limit="6"</code>. The 7th avatar will contain +[number] to indicates more avatars and clickable</p>
+
+                    <div class="row mt-6">
+                        <div class="col-sm-6">
+                            <h5>Stack Avatar Default</h5>
+                            <div class="py-3">
+                                <div class="stack-avatar">
+                                    <div class="avatar" data-initial="MH" clickable></div>
+                                    <div class="avatar" data-initial="MH" clickable></div>
+                                    <div class="avatar" data-initial="MH" clickable></div>
+                                    <div class="avatar" data-initial="MH"></div>
+                                    <div class="avatar" data-initial="MH"></div>
+                                    <div class="avatar" data-initial="MH"></div>
+                                </div>
+                            </div>
+        
+                            <div class="py-3">
+                                <div class="stack-avatar" data-limit="6">
+                                    <div class="avatar" data-initial="MH" clickable>
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar" data-initial="MH" clickable>
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar" data-initial="MH" clickable>
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar" clickable data-initial="+10">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <h5>Stack Avatar SM size</h5>
+                            <div class="py-3">
+                                <div class="stack-avatar">
+                                    <div class="avatar avatar-sm" data-initial="MH"></div>
+                                    <div class="avatar avatar-sm" data-initial="MH"></div>
+                                    <div class="avatar avatar-sm" data-initial="MH"></div>
+                                    <div class="avatar avatar-sm" data-initial="MH"></div>
+                                    <div class="avatar avatar-sm" data-initial="MH"></div>
+                                    <div class="avatar avatar-sm" data-initial="MH"></div>
+                                </div>
+                            </div>
+        
+                            <div class="py-3">
+                                <div class="stack-avatar" data-limit="6">
+                                    <div class="avatar avatar-sm" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar avatar-sm" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar avatar-sm" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar avatar-sm" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar avatar-sm" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar avatar-sm" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar avatar-sm" clickable data-initial="+10">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                                <!-- wrap avatar with new parent .stack-avatar -->
+                                <div class="stack-avatar">
+                                    <div class="avatar" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar" data-initial="MH">
+                                        <img src="build/images/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="avatar" data-initial="+10" clickable></div>
+                                </div>
+                                
+                            </xmp>
+                        </code>
+                    </pre>
+                    
+                </section>
+
+                <section id="pill">
+                    <h2>Pill</h2>
+                    <p>Pill used to display status of data. It contains 2 types <code>normal variant</code> and <code> inverted variant</code></p> In most cases use the normal variant and only use the inverted variant when necessary according to design.</p>
+
+                    <h5 class="mt-5">Normal variant </h5>
+                    <div class="pb-5">
+                        <div class="pill pill-gray mr-4">Published</div>
+                        <div class="pill pill-blue mr-4">Published</div>
+                        <div class="pill pill-green mr-4">Published</div>
+                        <div class="pill pill-orange mr-4">Published</div>
+                        <div class="pill pill-red mr-4">Published</div>
+                        <div class="pill pill-purple">Published</div>
+                    </div>
+
+                    <h5 class="mt-5">Inverted variant </h5>
+                    <div class="pb-5">
+                        <div class="pill pill-gray pill-inverted mr-4">Published</div>
+                        <div class="pill pill-blue pill-inverted mr-4">Published</div>
+                        <div class="pill pill-green pill-inverted mr-4">Published</div>
+                        <div class="pill pill-orange pill-inverted mr-4">Published</div>
+                        <div class="pill pill-red pill-inverted mr-4">Published</div>
+                        <div class="pill pill-purple pill-inverted">Published</div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                            <!-- Pill normal -->
+                            <div class="pill pill-gray">Published</div>
+                            <div class="pill pill-blue">Published</div>
+                            <div class="pill pill-green">Published</div>
+                            <div class="pill pill-orange">Published</div>
+                            <div class="pill pill-red">Published</div>
+                            <div class="pill pill-purple">Published</div>
+
+                            <!-- Pill Inverted -->
+                            <div class="pill pill-gray pill-inverted">Published</div>
+                            <div class="pill pill-blue pill-inverted">Published</div>
+                            <div class="pill pill-green pill-inverted">Published</div>
+                            <div class="pill pill-orange pill-inverted">Published</div>
+                            <div class="pill pill-red pill-inverted">Published</div>
+                            <div class="pill pill-purple pill-inverted">Published</div>
+                            </xmp>
+                        </code>
+                    </pre>
+                </section>
+
+                <section id="banner">
+                    <h2>Banner</h2>
+                    <p>Banner is used to hightlight an important message within a page, within a card component or modal. </p> 
+                    <p>There are <strong>5 variant</strong> of banner</p>
+                    <ul class="mb-3">
+                        <li><code>Green</code> - to indicates success message or positive item</li>
+                        <li><code>Blue</code> - to indicates informative message or hint</li>
+                        <li><code>Red</code> - to indicates error message, alert or danger</li>
+                        <li><code>Orange</code> - to indicates warning message or warning</li>
+                        <li><code>Purple</code> - to indicates guide message or documentation</li>
+                    </ul>
+                    <p>Banner can contain standalone text or together with icon to strongly support the corresponding banner descriptions. It has to be displayed on top of white background component (card, modal) and need to be a block element.</p>
+
+                    <div class="py-3">
+                        <div class="banner banner-green">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                        <div class="banner banner-blue">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                        <div class="banner banner-red">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                        <div class="banner banner-orange">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                        <div class="banner banner-purple">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                                <div class="banner banner-green">It is a long established...</div>
+                                <div class="banner banner-blue">It is a long established...</div>
+                                <div class="banner banner-red">It is a long established...</div>
+                                <div class="banner banner-orange">It is a long established...</div>
+                                <div class="banner banner-purple">It is a long established...</div>
+                            </xmp>
+                        </code>
+                    </pre>
+                    
+
+                    <h5>Banner with icon</h5>
+                    <p>Banner can contains icon with it. The icon used need to have relation with the banner type used. As you see in example below, Info icon is used with blue banner as this banner type convey informative of value. The banner icon is set to used fixed size <code>24px</code> <strong>width</strong> and <code>24px</code> <strong>height</strong>. Svg icon need to be wrapped inside a parent in our case is the <code>&lt;fa-icon&gt;</code></p>
+                    <div class="py-3">
+                        <div class="banner banner-blue">
+                            <fa-icon>
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg>
+                            </fa-icon>                        
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                                
+                                <div class="banner banner-blue">
+                                    <!-- SVG need to wrap within any parent to display flex item correctly  -->
+                                    <fa-icon>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" ...></svg>
+                                    </fa-icon>
+                                    It is a long established...
+                                </div> 
+                            </xmp>
+                        </code>
+                    </pre>
+
+                </section>
+
+                <!-- BUTTON -->
+                <section id="button">
+                    <h2>Button</h2>
+                    <p class="mb-6">Button is widely used inside the app within form, modal, layout and pages. It used to provide access on clickable item and function</p>
+                    
+                    <h5>Button Type</h5>
+                    <p>There are 6 types of button defined and the types of button used will vary depending on pages and actions. Button type available <code>CTA, primary, danger, default, outline, link</code>. Button text need to wrap in a <code>&lt;span&gt</code> because it had flex property apply.</p>
+
+                    <div class="py-5">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button CTA</div>
+                                <button class="button button-cta">
+                                    <span>Create Item</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button Primary</div>
+                                <button class="button button-primary">
+                                    <span>Add Item</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button Danger</div>
+                                <button class="button button-danger">
+                                    <span>Delete</span>                                    
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button default</div>
+                                <button class="button">
+                                    <span>Cancel</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button Outline</div>
+                                <button class="button button-outline">
+                                    <span>Edit item</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button Link</div>
+                                <button class="button button-link">
+                                    <span>Edit profile</span>
+                                </button>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                                <button class="button button-cta">
+                                    <span>Create Item</span>
+                                </button>
+                                <button class="button button-primary">
+                                    <span>Add Item</span>
+                                </button>
+                                <button class="button button-danger">
+                                    <span>Delete</span>
+                                </button>
+                                <button class="button">
+                                    <span>Cancel</span>
+                                </button>
+                                <button class="button button-outline">
+                                    <span>Edit item</span>
+                                </button>
+                                <button class="button button-link">
+                                    <span>Edit profile</span>
+                                </button>
+                            </xmp>
+                        </code>
+                    </pre>
+
+                    <h5>Button State Disabled & Loading</h5>
+                    <div class="py-4">
+                        <p><strong>Button disabled state</strong></p>
+                        <p>Button disabled is used to block any action to perform by user. Example like to disable form submission before form is completely been fill. Add attribute <code>[disabled]</code> to the button to achieve the UI</p>
+                        <div class="row pb-5">
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button CTA</div>
+                                <button class="button button-cta" disabled>
+                                    <span>Create Item</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button Primary</div>
+                                <button class="button button-primary" disabled>
+                                    <span>Add Item</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button Danger</div>
+                                <button class="button button-danger" disabled>
+                                    <span>Delete</span>                                    
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button default</div>
+                                <button class="button" disabled>
+                                    <span>Cancel</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button Outline</div>
+                                <button class="button button-outline" disabled>
+                                    <span>Edit item</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button Link</div>
+                                <button class="button button-link" disabled>
+                                    <span>Edit profile</span>
+                                </button>
+                            </div>
+                        </div> 
+
+                        <p><strong>Button loading state</strong></p>
+                        <p>Button loading state is used when submitting data or deleting data or processing data. It indicates the action performed is been processed. Just bind with <code>.is-loading</code> classname and it must bind with <code>[disabled]</code> state.</p>
+                        <div class="row py-2">
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button CTA</div>
+                                <button class="button button-cta is-loading" disabled>
+                                    <span>Create Item</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button Primary</div>
+                                <button class="button button-primary is-loading" disabled>
+                                    <span>Add Item</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button Danger</div>
+                                <button class="button button-danger is-loading" disabled>
+                                    <span>Delete</span>                                    
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button default</div>
+                                <button class="button is-loading" disabled>
+                                    <span>Cancel</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button Outline</div>
+                                <button class="button button-outline is-loading" disabled>
+                                    <span>Edit item</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="text-7 text-secondary  text-semibold mb-4">Button Link</div>
+                                <button class="button button-link is-loading" disabled>
+                                    <span>Edit profile</span>
+                                </button>
+                            </div>                        
+                        </div>
+                    </div>
+
+                    
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>
+                                <!-- Button disabled -->
+                                <button class="button button-cta" disabled>
+                                    <span>Create Item</span>
+                                </button>
+
+                                <!-- Button Loading & disabled -->
+                                <button class="button button-cta is-loading" disabled>
+                                    <span>Create Item</span>
+                                </button>
+                            </xmp>
+                        </code>
+                    </pre>
+
+                    <h5>Button Sizes</h5>
+                    <p>Button comes with 3 sizes. Each usage of the sizes will vary and followed the design defined.</p>
+                    <ul class="mb-4">
+                        <li><code>Button Large</code></li>
+                        <li><code>Button Default</code></li>
+                        <li><code>Button Small</code></li>
+                    </ul>
+                    <div class="py-5 text-center">
+                        <div class="row mb-3">
+                            <div class="col-sm-4">
+                                <button class="button button-cta button-lg"><span>Large button</span></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="button button-cta"><span>Default button</span></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="button button-cta button-sm"><span>Small button</span></button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-4">
+                                <button class="button button-primary button-lg"><span>Large button</span></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="button button-primary"><span>Default button</span></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="button button-primary button-sm"><span>Small button</span></button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-4">
+                                <button class="button button-danger button-lg"><span>Large button</span></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="button button-danger"><span>Default button</span></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="button button-danger button-sm"><span>Small button</span></button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-4">
+                                <button class="button button-lg"><span>Large button</span></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="button"><span>Default button</span></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="button button-sm"><span>Small button</span></button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-4">
+                                <button class="button button-outline button-lg"><span>Large button</span></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="button button-outline"><span>Default button</span></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="button button-outline button-sm"><span>Small button</span></button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-4">
+                                <button class="button button-link button-lg"><span>Large button</span></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="button button-link"><span>Default button</span></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="button button-link button-sm"><span>Small button</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>                                
+                                <button class="button button-primary button-lg">
+                                    <span>Large button</span>
+                                </button>   
+                                <!-- default sizes no size modifier needed -->
+                                <button class="button button-primary">
+                                    <span>Default button</span>
+                                </button>
+                                <button class="button button-primary button-sm">
+                                    <span>Small button</span>
+                                </button>     
+                            </xmp>
+                        </code>
+                    </pre>
+
+                    <h5>Button with icon</h5>
+                    <p>Button can contain icon either on the left or right. Render the svg icon inside the button before the span text. For right icon require extra class define in the button <code>.icon-right</code> </p>
+                    
+                    <div class="row py-3">
+                        <div class="col-sm-3">
+                            <div class="text-7 text-secondary  text-semibold mb-4">Icon Left</div>
+                            <button class="button button-primary">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M441.9 250.1l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L250 385.4V44c0-6.6-5.4-12-12-12h-28c-6.6 0-12 5.4-12 12v341.4L42.9 230.3c-4.7-4.7-12.3-4.7-17 0L6.1 250.1c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path></svg>
+                                </fa-icon>
+                                <span>Add Item</span>
+                            </button>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="text-7 text-secondary  text-semibold mb-4">Icon Right</div>
+                            <button class="button button-primary icon-right">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path></svg>
+                                </fa-icon>
+                                <span>Export</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>         
+                                <!-- Button left icon -->
+                                <button class="button button-primary">
+                                    <fa-icon>
+                                        <svg aria-hidden="true" focusable="false"> ...</svg>
+                                    </fa-icon>
+                                    <span>Add Item</span>
+                                </button>   
+
+                                <!-- Button right icon -->
+                                <button class="button button-primary icon-right">
+                                    <fa-icon>
+                                        <svg aria-hidden="true" focusable="false"> ...</svg>
+                                    </fa-icon>
+                                    <span>Add Item</span>
+                                </button>  
+                            </xmp>
+                        </code>
+                    </pre>
+
+                    <h5>Button Group</h5>
+                    <p>Button group can be used to provide fast selection of choices. The choices must be within 2 - 4 items. If the choices contain more than 4 it is not going to be good usage to use the button group.</p>
+
+                    <p>To retain the active selection, the classname <code>.is-active</code> need to bind during the button choices clicked</p>
+
+                    <p>There are 2 types of button group</p>
+                    <ul>
+                        <li><code>Normal button group</code> - Common usage for button group </li>
+                        <li><code>Custom button group</code> - Different active color based on button type assigned (CTA,Primary, Danger)</li>
+                    </ul>
+
+                    <div class="py-5">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div  class="mb-3"><strong>Normal button group</strong></div>
+                                <div class="button-group">
+                                    <button class="button"><span>Choices one</span></button>
+                                    <button class="button"><span>Choices two</span></button>
+                                    <button class="button"><span>Choices three</span></button>
+                                </div>                                
+                            </div>
+                            <div class="col-sm-6">
+                                <div  class="mb-3"><strong>Custom button group</strong></div>
+                                <div class="button-group">
+                                    <button class="button button-cta"><span>CTA type</span></button>
+                                    <button class="button button-primary"><span>Primary type</span></button>
+                                    <button class="button button-danger"><span>Danger type</span></button>
+                                    <button class="button"><span>Default</span></button>
+                                </div>                                
+                            </div>                        
+                        </div>  
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>   
+                                <!-- Normal button group -->
+                                <div class="button-group">
+                                    <button class="button is-active">
+                                        <span>Choices one</span>
+                                    </button>
+                                    <button class="button">
+                                        <span>Choices two</span>
+                                    </button>
+                                    <button class="button">
+                                        <span>Choices three</span>
+                                    </button>
+                                </div> 
+
+                                <!-- Custom button group -->
+                                <div class="button-group">
+                                    <button class="button button-cta">
+                                        <span>CTA type</span>
+                                    </button>
+                                    <button class="button button-primary">
+                                        <span>Primary type</span>
+                                    </button>
+                                    <button class="button button-danger">
+                                        <span>Danger type</span>
+                                    </button>
+                                    <button class="button">
+                                        <span>Default</span>
+                                    </button>
+                                </div>
+                            </xmp>
+                        </code>
+                    </pre>
+                    <h5>Button icon</h5>
+                    <p>Button icon is used meant to have only icon to reserve space but still actionable. The icon will use font awesome library. When hover the button icon it must always show a tooltip to provide hint of the action. For example <code> Edit, Delete, Add</code>.</p>
+
+                    <p>There are 2 types of button icon and come with large property.</p>
+                    <ul class="mb-2">
+                        <li><code>default button icon</code> - this will be default button icon style</li>
+                        <li><code>danger button icon</code> - this will be for warning button icon style like Delete, Remove, Close</li>
+                    </ul>
+
+                    <div class="row py-5">
+                        <div class="col-sm-6">
+                            <div class="mb-3"><strong>Default button icon</strong></div>
+                            <button class="button button-icon">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="pen" class="svg-inline--fa fa-pen fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.26 56.26l-37.51-37.51C443.25 6.25 426.87 0 410.49 0s-32.76 6.25-45.25 18.74l-74.49 74.49L256 127.98 12.85 371.12.15 485.34C-1.45 499.72 9.88 512 23.95 512c.89 0 1.79-.05 2.69-.15l114.14-12.61L384.02 256l34.74-34.74 74.49-74.49c25-25 25-65.52.01-90.51zM118.75 453.39l-67.58 7.46 7.53-67.69 231.24-231.24 31.02-31.02 60.14 60.14-31.02 31.02-231.33 231.33zm340.56-340.57l-44.28 44.28-60.13-60.14 44.28-44.28c4.08-4.08 8.84-4.69 11.31-4.69s7.24.61 11.31 4.69l37.51 37.51c6.24 6.25 6.24 16.4 0 22.63z"></path></svg>
+                                </fa-icon>
+                            </button>
+                            <button class="button button-icon">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clipboard-list" class="svg-inline--fa fa-clipboard-list fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"></path></svg>
+                                </fa-icon>
+                            </button>
+                            <button class="button button-icon">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="comment-alt-plus" class="svg-inline--fa fa-comment-alt-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 7.1 5.8 12 12 12 2.4 0 4.9-.7 7.1-2.4L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm16 352c0 8.8-7.2 16-16 16H288l-12.8 9.6L208 428v-60H64c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h384c8.8 0 16 7.2 16 16v288zM336 184h-56v-56c0-8.8-7.2-16-16-16h-16c-8.8 0-16 7.2-16 16v56h-56c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h56v56c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16v-56h56c8.8 0 16-7.2 16-16v-16c0-8.8-7.2-16-16-16z"></path></svg>
+                                </fa-icon>
+                            </button>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="mb-3"><strong>Danger button icon</strong></div>
+                            <button class="button button-icon button-icon-danger">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="trash-alt" class="svg-inline--fa fa-trash-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"></path></svg>
+                                </fa-icon>
+                            </button>
+                            <button class="button button-icon button-icon-danger">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times" class="svg-inline--fa fa-times fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"></path></svg>
+                                </fa-icon>
+                            </button>
+                            <button class="button button-icon button-icon-danger">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="lock" class="svg-inline--fa fa-lock fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 192h-32v-46.6C368 65.8 304 .2 224.4 0 144.8-.2 80 64.5 80 144v48H48c-26.5 0-48 21.5-48 48v224c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48zm-272-48c0-52.9 43.1-96 96-96s96 43.1 96 96v48H128v-48zm272 320H48V240h352v224z"></path></svg>
+                                </fa-icon>
+                            </button>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="mt-5 mb-3"><strong>Large default button icon</strong></div>
+                            <button class="button button-icon button-lg">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="pen" class="svg-inline--fa fa-pen fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.26 56.26l-37.51-37.51C443.25 6.25 426.87 0 410.49 0s-32.76 6.25-45.25 18.74l-74.49 74.49L256 127.98 12.85 371.12.15 485.34C-1.45 499.72 9.88 512 23.95 512c.89 0 1.79-.05 2.69-.15l114.14-12.61L384.02 256l34.74-34.74 74.49-74.49c25-25 25-65.52.01-90.51zM118.75 453.39l-67.58 7.46 7.53-67.69 231.24-231.24 31.02-31.02 60.14 60.14-31.02 31.02-231.33 231.33zm340.56-340.57l-44.28 44.28-60.13-60.14 44.28-44.28c4.08-4.08 8.84-4.69 11.31-4.69s7.24.61 11.31 4.69l37.51 37.51c6.24 6.25 6.24 16.4 0 22.63z"></path></svg>
+                                </fa-icon>
+                            </button>
+                            <button class="button button-icon button-lg">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clipboard-list" class="svg-inline--fa fa-clipboard-list fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"></path></svg>
+                                </fa-icon>
+                            </button>
+                            <button class="button button-icon button-lg">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="comment-alt-plus" class="svg-inline--fa fa-comment-alt-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 7.1 5.8 12 12 12 2.4 0 4.9-.7 7.1-2.4L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm16 352c0 8.8-7.2 16-16 16H288l-12.8 9.6L208 428v-60H64c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h384c8.8 0 16 7.2 16 16v288zM336 184h-56v-56c0-8.8-7.2-16-16-16h-16c-8.8 0-16 7.2-16 16v56h-56c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h56v56c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16v-56h56c8.8 0 16-7.2 16-16v-16c0-8.8-7.2-16-16-16z"></path></svg>
+                                </fa-icon>
+                            </button>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="mt-5 mb-3"><strong>Large Danger button icon</strong></div>
+                            <button class="button button-icon button-icon-danger button-lg">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="trash-alt" class="svg-inline--fa fa-trash-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"></path></svg>
+                                </fa-icon>
+                            </button>
+                            <button class="button button-icon button-icon-danger button-lg">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times" class="svg-inline--fa fa-times fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"></path></svg>
+                                </fa-icon>
+                            </button>
+                            <button class="button button-icon button-icon-danger button-lg">
+                                <fa-icon>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="lock" class="svg-inline--fa fa-lock fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 192h-32v-46.6C368 65.8 304 .2 224.4 0 144.8-.2 80 64.5 80 144v48H48c-26.5 0-48 21.5-48 48v224c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48zm-272-48c0-52.9 43.1-96 96-96s96 43.1 96 96v48H128v-48zm272 320H48V240h352v224z"></path></svg>
+                                </fa-icon>
+                            </button>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html">
+                            <xmp>         
+                                <!-- Button icon default -->
+                                <button class="button button-icon">
+                                    <fa-icon>
+                                        <svg aria-hidden="true" focusable="false">...</svg>
+                                    </fa-icon> 
+                                </button>   
+
+                                <!-- Button icon danger -->
+                                <button class="button button-icon button-icon-danger">
+                                    <fa-icon>
+                                        <svg aria-hidden="true" focusable="false">...</svg>
+                                    </fa-icon> 
+                                </button>  
+
+                                <!-- Large Button icon default -->
+                                <button class="button button-icon button-lg">
+                                    <fa-icon>
+                                        <svg aria-hidden="true" focusable="false">...</svg>
+                                    </fa-icon> 
+                                </button>   
+
+                                <!-- Large Button icon danger -->
+                                <button class="button button-icon button-icon-danger button-lg">
+                                    <fa-icon>
+                                        <svg aria-hidden="true" focusable="false">...</svg>
+                                    </fa-icon> 
+                                </button>  
+                            </xmp>
+                        </code>
+                    </pre>
+                </section>
+            </div>
+        </div>
+    </body>
+    <script src="build/js/preCode.js"></script>
+    <script src="node_modules/prismjs/prism.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          var sidebarLinks = $(".sidebar a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              $(this).addClass("active");
+              sidebarLinks.not(this).removeClass("active");
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top - 30
+              }, 300, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+        
+</html>
