@@ -1,0 +1,49 @@
+.banner {
+    padding: $spacing-4 $spacing-5;
+    border-left: 4px solid;
+    margin-bottom: $spacing-6;
+    font-weight: $semibold;
+    border-radius: 0 $radius $radius 0;
+    font-size: $font-6-size;
+    line-height: $font-6-height;
+    display: flex;    
+    align-items: top;
+
+    svg {
+        width: $icon-lg;
+        height: $icon-lg;
+        margin-right: $spacing-3; 
+        margin-top: $spacing-1;         
+    }
+}
+
+.banner-green {
+    border-left-color: $green-600;
+    background-color: $green-100;
+    color: $green-600;
+}
+
+.banner-blue {
+    border-left-color: $blue-600;
+    background-color: $blue-100;
+    color: $blue-600;
+}
+
+.banner-red {
+    border-left-color: $red-600;
+    background-color: $red-100;
+    color: $red-600;
+}
+
+.banner-orange {
+    border-left-color: $orange-600;
+    background-color: $orange-100;
+    color: $orange-600;
+}
+
+.banner-purple {
+    border-left-color: $purple-600;
+    background-color: $purple-100;
+    color: $purple-600;
+}
+

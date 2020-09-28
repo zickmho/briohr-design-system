@@ -1,0 +1,24 @@
+@import 'reset';
+
+// import library variables
+@import '../assets/variables/variables';
+
+// Import library utilities
+@import '../assets/utilities/spacing';
+@import '../assets/utilities/text';
+
+// import library elements
+@import '../assets/elements/typeface';
+@import '../assets/elements/link';
+
+// import library components
+@import '../assets/components/card';
+@import '../assets/components/pill';
+@import '../assets/components/avatar';
+@import '../assets/components/banner';
+@import '../assets/components/button';
+
+
+// import demo template styling
+@import 'layout';
+@import 'demo';

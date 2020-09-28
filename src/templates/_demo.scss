@@ -1,0 +1,273 @@
+
+
+.inner-content {
+    h1,h2,h3,h4,h5,h6,p {
+        margin-bottom: $spacing-3;
+    }
+
+    pre {
+        max-height: 400px;
+        overflow: auto;
+        margin-bottom: $spacing-7 !important;
+        margin-top: $spacing-1 !important;
+    }
+
+    code {        
+        font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+        padding: 0 $spacing-1;
+        color: $pink-500;
+        font-size: 90%;
+    }
+}
+
+.color-section {
+    margin: $spacing-4 0;
+    display: flex;
+    align-items: top;
+
+    .color-title {
+        margin-top: $spacing-3;
+        width: 100px;
+        font-weight: $semibold;
+    }
+
+    .color-sample {   
+        display: flex;
+        flex-direction: column;
+    
+        .color-item {
+            &.gray:nth-child(1) {
+                background-color: $gray-700;
+            }
+            &.gray:nth-child(2) {
+                background-color: $gray-600;
+            }
+            &.gray:nth-child(3) {
+                background-color: $gray-500;
+            }
+            &.gray:nth-child(4) {
+                background-color: $gray-400;
+            }
+            &.gray:nth-child(5) {
+                background-color: $gray-300;
+            }
+            &.gray:nth-child(6) {
+                background-color: $gray-200;
+            }
+            &.gray:nth-child(7) {
+                background-color: $gray-100;
+            }
+
+            &.lightblue:nth-child(1) {
+                background-color: $lightblue-700;
+            }
+            &.lightblue:nth-child(2) {
+                background-color: $lightblue-600;
+            }
+            &.lightblue:nth-child(3) {
+                background-color: $lightblue-500;
+            }
+            &.lightblue:nth-child(4) {
+                background-color: $lightblue-400;
+            }
+            &.lightblue:nth-child(5) {
+                background-color: $lightblue-300;
+            }
+            &.lightblue:nth-child(6) {
+                background-color: $lightblue-200;
+            }
+            &.lightblue:nth-child(7) {
+                background-color: $lightblue-100;
+            }
+
+            &.blue:nth-child(1) {
+                background-color: $blue-700;
+            }
+            &.blue:nth-child(2) {
+                background-color: $blue-600;
+            }
+            &.blue:nth-child(3) {
+                background-color: $blue-500;
+            }
+            &.blue:nth-child(4) {
+                background-color: $blue-400;
+            }
+            &.blue:nth-child(5) {
+                background-color: $blue-300;
+            }
+            &.blue:nth-child(6) {
+                background-color: $blue-200;
+            }
+            &.blue:nth-child(7) {
+                background-color: $blue-100;
+            }
+
+            &.purple:nth-child(1) {
+                background-color: $purple-700;
+            }
+            &.purple:nth-child(2) {
+                background-color: $purple-600;
+            }
+            &.purple:nth-child(3) {
+                background-color: $purple-500;
+            }
+            &.purple:nth-child(4) {
+                background-color: $purple-400;
+            }
+            &.purple:nth-child(5) {
+                background-color: $purple-300;
+            }
+            &.purple:nth-child(6) {
+                background-color: $purple-200;
+            }
+            &.purple:nth-child(7) {
+                background-color: $purple-100;
+            }
+
+            &.red:nth-child(1) {
+                background-color: $red-700;
+            }
+            &.red:nth-child(2) {
+                background-color: $red-600;
+            }
+            &.red:nth-child(3) {
+                background-color: $red-500;
+            }
+            &.red:nth-child(4) {
+                background-color: $red-400;
+            }
+            &.red:nth-child(5) {
+                background-color: $red-300;
+            }
+            &.red:nth-child(6) {
+                background-color: $red-200;
+            }
+            &.red:nth-child(7) {
+                background-color: $red-100;
+            }
+
+            &.pink:nth-child(1) {
+                background-color: $pink-700;
+            }
+            &.pink:nth-child(2) {
+                background-color: $pink-600;
+            }
+            &.pink:nth-child(3) {
+                background-color: $pink-500;
+            }
+            &.pink:nth-child(4) {
+                background-color: $pink-400;
+            }
+            &.pink:nth-child(5) {
+                background-color: $pink-300;
+            }
+            &.pink:nth-child(6) {
+                background-color: $pink-200;
+            }
+            &.pink:nth-child(7) {
+                background-color: $pink-100;
+            }
+
+            &.orange:nth-child(1) {
+                background-color: $orange-700;
+            }
+            &.orange:nth-child(2) {
+                background-color: $orange-600;
+            }
+            &.orange:nth-child(3) {
+                background-color: $orange-500;
+            }
+            &.orange:nth-child(4) {
+                background-color: $orange-400;
+            }
+            &.orange:nth-child(5) {
+                background-color: $orange-300;
+            }
+            &.orange:nth-child(6) {
+                background-color: $orange-200;
+            }
+            &.orange:nth-child(7) {
+                background-color: $orange-100;
+            }
+
+            &.yellow:nth-child(1) {
+                background-color: $yellow-700;
+            }
+            &.yellow:nth-child(2) {
+                background-color: $yellow-600;
+            }
+            &.yellow:nth-child(3) {
+                background-color: $yellow-500;
+            }
+            &.yellow:nth-child(4) {
+                background-color: $yellow-400;
+            }
+            &.yellow:nth-child(5) {
+                background-color: $yellow-300;
+            }
+            &.yellow:nth-child(6) {
+                background-color: $yellow-200;
+            }
+            &.yellow:nth-child(7) {
+                background-color: $yellow-100;
+            }
+
+            &.green:nth-child(1) {
+                background-color: $green-700;
+            }
+            &.green:nth-child(2) {
+                background-color: $green-600;
+            }
+            &.green:nth-child(3) {
+                background-color: $green-500;
+            }
+            &.green:nth-child(4) {
+                background-color: $green-400;
+            }
+            &.green:nth-child(5) {
+                background-color: $green-300;
+            }
+            &.green:nth-child(6) {
+                background-color: $green-200;
+            }
+            &.green:nth-child(7) {
+                background-color: $green-100;
+            }
+
+            &.cta:nth-child(1) {
+                background-color: $cta-700;
+            }
+            &.cta:nth-child(2) {
+                background-color: $cta-600;
+            }
+            &.cta:nth-child(3) {
+                background-color: $cta-500;
+            }
+            
+        }        
+    }
+
+    .color-row {
+        display: flex;
+    }
+
+    .color-item {
+        width: 100px;
+        height: 70px;  
+        font-size: 10px;      
+    }
+
+    .color-desc {
+        padding-left: $spacing-1;
+        width: 100px;
+
+        > * {
+            font-size: 10px;
+            margin-top: $spacing-1;            
+        }
+
+        > div:last-child {
+            font-weight: $semibold;
+        }
+    }
+}
