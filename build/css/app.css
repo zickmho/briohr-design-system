@@ -1258,19 +1258,16 @@ a:hover {
 .button-group button:hover {
   background-color: #DEE2E6 !important;
 }
-.button-group button:focus,
-.button-group button .is-active {
+.button-group button:focus, .button-group button.is-active {
   background-color: #02A284 !important;
   color: #ffffff;
   border-color: #02A284;
 }
-.button-group button.button-cta:focus,
-.button-group button.button-cta .is-active {
+.button-group button.button-cta:focus, .button-group button.button-cta.is-active {
   background-color: #FF6347 !important;
   border-color: #FF6347;
 }
-.button-group button.button-danger:focus,
-.button-group button.button-danger .is-active {
+.button-group button.button-danger:focus, .button-group button.button-danger.is-active {
   background-color: #D12043 !important;
   border-color: #D12043;
 }

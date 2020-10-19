@@ -259,7 +259,7 @@
         }
 
         &:focus, 
-        .is-active {
+        &.is-active {
             background-color: $green-500 !important;
             color: $white;
             border-color: $green-500;
@@ -267,14 +267,14 @@
 
         &.button-cta {
             &:focus, 
-            .is-active {
+            &.is-active {
                 background-color: $cta-600 !important;            border-color: $cta-600;    
             }
         }
 
         &.button-danger {
             &:focus, 
-            .is-active {
+            &.is-active {
                 background-color: $red-600 !important;            border-color: $red-600;    
             }
         }
