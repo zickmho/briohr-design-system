@@ -1,0 +1,156 @@
+// Base Color
+$white  : #ffffff;
+
+// CTA
+$cta-700    : #E95237;
+$cta-600    : #FF6347;
+$cta-500    : #FB765E;
+
+// Gray
+$gray-700:      #2E4155;
+$gray-600:      #506377;
+$gray-500:      #7A8A9B;
+$gray-400:      #B9C3CD;
+$gray-300:      #DEE2E6;
+$gray-200:      #ECEEF2;
+$gray-100:      #F5F6F8;
+
+// Light Blue
+$lightblue-700:      #0075B2;
+$lightblue-600:      #0795D5;
+$lightblue-500:      #21B2F4;
+$lightblue-400:      #6ECDF8;
+$lightblue-300:      #A6E0FF;
+$lightblue-200:      #C7EBFC;
+$lightblue-100:      #F3FBFF;
+
+// Blue
+$blue-700:      #0049CC;
+$blue-600:      #116ECB;
+$blue-500:      #218CF4;
+$blue-400:      #6CAFF3;
+$blue-300:      #B3DBFF;
+$blue-200:      #DBEEFF;
+$blue-100:      #F1F8FF;
+
+// Purple
+$purple-700:      #3F40BF;
+$purple-600:      #5859C8;
+$purple-500:      #7374E7;
+$purple-400:      #A0A0F0;
+$purple-300:      #C9CCFF;
+$purple-200:      #E5E7FF;
+$purple-100:      #F0F0FC;
+
+// Red
+$red-700:      #BF0025;
+$red-600:      #D12043;
+$red-500:      #E63A5C;
+$red-400:      #F87B92;
+$red-300:      #FEBFC6;
+$red-200:      #FBDFE5;
+$red-100:      #FFF1F4;
+
+// Pink
+$pink-700:      #B40676;
+$pink-600:      #D02E96;
+$pink-500:      #E751B1;
+$pink-400:      #FB9AD8;
+$pink-300:      #FDB7E4;
+$pink-200:      #FED8F0;
+$pink-100:      #FFF1FA;
+
+// Orange
+$orange-700:      #B33A00;
+$orange-600:      #CC561D;
+$orange-500:      #F28830;
+$orange-400:      #FFB77C;
+$orange-300:      #FFD3B0;
+$orange-200:      #FFE8D4;
+$orange-100:      #FFF4EA;
+
+// Yellow
+$yellow-700:      #B78100;
+$yellow-600:      #DEAC0E;
+$yellow-500:      #FFCD31;
+$yellow-400:      #FADA76;
+$yellow-300:      #FFE9A6;
+$yellow-200:      #FEF4D4;
+$yellow-100:      #FFFAEB;
+
+// Green
+$green-700:      #006653;
+$green-600:      #008E74;
+$green-500:      #02A284;
+$green-400:      #40BFA7;
+$green-300:      #81E7D4;
+$green-200:      #D2F5F0;
+$green-100:      #ECFBF9;
+
+
+// Base Font 
+$font-heading:          "Lato",sans-serif;
+$font-base:             "Roboto",sans-serif;
+$font-base-color:       $gray-700;
+$font-secondary-color:  $gray-600;
+$font-muted-color:      $gray-500;
+
+
+// Base Font Weight
+$regular:    400;
+$semibold:   500;
+$bold:       700;
+
+// Base Font Size
+$font-1-size:        32px;
+$font-2-size:        28px;
+$font-3-size:        24px;
+$font-4-size:        20px;
+$font-5-size:        16px;
+$font-6-size:        14px;
+$font-7-size:        12px;
+$font-8-size:        10px;
+
+
+// Base Line Height
+$font-1-height:        40px;
+$font-2-height:        36px;
+$font-3-height:        30px;
+$font-4-height:        28px;
+$font-5-height:        22px;
+$font-6-height:        20px;
+$font-7-height:        18px;
+$font-8-height:        16px;
+
+// Base Spacing Unit
+$spacing-1  : 4px;
+$spacing-2  : 8px;
+$spacing-3  : 12px;
+$spacing-4  : 16px;
+$spacing-5  : 24px;
+$spacing-6  : 32px;
+$spacing-7  : 48px;
+
+$icon-xs    : 12px;
+$icon-sm    : 16px;
+$icon-md    : 20px;
+$icon-lg    : 24px;
+$icon-xl    : 32px;
+
+$avatar-xxs : 24px;
+$avatar-xs  : 30px;
+$avatar-sm  : 40px;
+$avatar-md  : 60px;
+$avatar-lg  : 80px;
+$avatar-xl  : 120px;
+
+
+// Base Radius
+$radius:    6px;
+$radius-lg: 10px;
+
+// Base transition
+$transition-default:    .25s ease all;
+$transition-fast:       .1s ease all;
+$transition-slow:       .4s ease all;
+

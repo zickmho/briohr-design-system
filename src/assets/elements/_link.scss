@@ -1,0 +1,13 @@
+a {
+    color: $green-600;
+    font-weight: $semibold;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+[clickable] {
+    cursor: pointer;
+}

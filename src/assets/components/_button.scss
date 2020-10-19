@@ -56,10 +56,10 @@
         margin-left: $spacing-2;
     }
 
+    &:not(.button-icon) > :not(span),
     svg {
         width: $icon-sm;
         height: $icon-sm;
-        
     }
 
     // 
@@ -209,6 +209,11 @@
 
     > * {
         margin: 0 !important;
+    }
+
+    > :first-child {
+        width: $icon-md;
+        height: $icon-md;
     }
 
     svg {

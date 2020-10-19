@@ -928,8 +928,7 @@ a:hover {
   line-height: 30px;
   text-align: center;
   font-size: 12px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -1083,8 +1082,7 @@ a:hover {
   transform-origin: 50% 50%;
   transition: 0.1s ease all;
   box-shadow: 0 3px 3px rgba(46, 65, 85, 0.08), 0 1px 0 #ffffff;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .button > :first-child:not(span) {
   margin-right: 8px;
@@ -1092,6 +1090,7 @@ a:hover {
 .button > :last-child:not(span) {
   margin-left: 8px;
 }
+.button:not(.button-icon) > :not(span),
 .button svg {
   width: 16px;
   height: 16px;
@@ -1110,8 +1109,7 @@ a:hover {
   border-left-color: #7A8A9B;
   border-top-color: #7A8A9B;
   content: "";
-  -webkit-animation: rotate 0.45s infinite linear;
-          animation: rotate 0.45s infinite linear;
+  animation: rotate 0.45s infinite linear;
   border-radius: 100%;
   border-style: dotted;
   border-width: 2px;
@@ -1224,6 +1222,10 @@ a:hover {
 .button.button-icon > * {
   margin: 0 !important;
 }
+.button.button-icon > :first-child {
+  width: 20px;
+  height: 20px;
+}
 .button.button-icon svg {
   width: 20px;
   height: 20px;
@@ -1276,15 +1278,6 @@ a:hover {
   content: "";
   clear: both;
   display: block;
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes rotate {
