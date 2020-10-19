@@ -1230,6 +1230,11 @@ a:hover {
   width: 20px;
   height: 20px;
 }
+.button.button-icon.button-sm > :first-child,
+.button.button-icon.button-sm svg {
+  width: 16px;
+  height: 16px;
+}
 .button.button-icon:hover {
   background-color: #D2F5F0;
 }

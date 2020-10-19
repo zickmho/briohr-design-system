@@ -221,6 +221,14 @@
         height: $icon-md;
     }
 
+    &.button-sm {
+        > :first-child,
+        svg {
+            width: $icon-sm;
+            height: $icon-sm;
+        }
+    }
+
     &:hover {
         background-color: $green-200;
     }
