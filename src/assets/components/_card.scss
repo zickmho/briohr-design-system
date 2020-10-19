@@ -1,18 +1,18 @@
 .card {
     background-color: $white;
     padding: $spacing-4 $spacing-5;
-    box-shadow: 0 0 0 1px rgba($gray-400, 0.6), 0 2px 4px rgba($gray-700, 0.1); 
+    box-shadow: $shadow-default;
     border-radius: $radius;
 
     &.card-border {
-        box-shadow: 0 0 0 1px $gray-300;
+        box-shadow: $shadow-border;
     }
 
     &.card-border-dark {
-        box-shadow: 0 0 0 1px $gray-400;
+        box-shadow: $shadow-border-dark;
     }
 
     &.card-2dp {
-        box-shadow: 0 0 0 1px rgba($gray-400, 0.6), 0 4px 10px rgba($gray-700, 0.15); 
+        box-shadow: $shadow-2dp;
     }
 }

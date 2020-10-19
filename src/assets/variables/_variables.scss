@@ -154,3 +154,9 @@ $transition-default:    .25s ease all;
 $transition-fast:       .1s ease all;
 $transition-slow:       .4s ease all;
 
+// Shadow properties
+$shadow-default:            0 0 0 1px rgba($gray-400, 0.6), 0 2px 4px rgba($gray-700, 0.1); 
+$shadow-border:             0 0 0 1px $gray-300;
+$shadow-border-dark:        0 0 0 1px $gray-400;
+$shadow-2dp:                0 0 0 1px rgba($gray-400, 0.6), 0 4px 10px rgba($gray-700, 0.15); 
+
